@@ -19,9 +19,13 @@ using namespace std;
 
 int main()
 {
-	int tankSize = 15;
-	int milesDriven = 375;
+	int tankSize;
+	int milesDriven;
 	double mpg;
+	cout << "How many gallons of gas does your car hold? ";
+	cin >> tankSize;
+	cout << "How many miles can you drive before running out of gas? ";
+	cin >> milesDriven;
 	mpg = milesDriven / tankSize;
 	cout << "If you drive " << milesDriven << " miles with a car that holds " << tankSize << " gallons of gas," << endl;
 	cout << "Then your car averages " << mpg << " miles per gallon" << endl;
